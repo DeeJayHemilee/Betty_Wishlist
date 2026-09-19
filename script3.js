@@ -11,6 +11,16 @@
     const ACCOUNT_NAME = "Elizabeth Emiola";
     const ACCOUNT_NUMBER = "6510235536";
 
+document.querySelectorAll(".section, .surprise-section, footer").forEach(function(section) {
+
+  const tag = document.createElement("div");
+
+  tag.className = "section-acct-tag";
+  tag.textContent = "Acct: " + ACCOUNT_NUMBER;
+
+  section.appendChild(tag);
+
+});
 
     /* =========================================================
        ITEM CATALOG
