@@ -17,7 +17,7 @@ document.querySelectorAll(".section, .surprise-section, footer").forEach(functio
 
   tag.type = "button";
   tag.className = "section-acct-tag";
-  tag.innerHTML = "📋 Acct: " + ACCOUNT_NUMBER;
+  tag.innerHTML = "📋 " + BANK_NAME + " · " + ACCOUNT_NUMBER;
   tag.setAttribute("aria-label", "Copy account number");
 
   tag.addEventListener("click", copyAccountNumber);
