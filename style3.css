@@ -251,6 +251,33 @@
     }
 
 
+  /* =========================================================
+       Account number for each section
+    ========================================================= */
+.surprise-section,
+footer {
+  position: relative;
+}
+
+.section-acct-tag {
+  position: absolute;
+  right: 24px;
+  bottom: 14px;
+  font-size: 0.68rem;
+  color: var(--muted);
+  opacity: 0.8;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .section-acct-tag {
+    right: 14px;
+    bottom: 8px;
+    font-size: 0.6rem;
+  }
+}
+
     /* =========================================================
        HERO
     ========================================================= */
