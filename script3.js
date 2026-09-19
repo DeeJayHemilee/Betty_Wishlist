@@ -13,10 +13,14 @@
 
 document.querySelectorAll(".section, .surprise-section, footer").forEach(function(section) {
 
-  const tag = document.createElement("div");
+  const tag = document.createElement("button");
 
+  tag.type = "button";
   tag.className = "section-acct-tag";
-  tag.textContent = "Acct: " + ACCOUNT_NUMBER;
+  tag.innerHTML = "📋 Acct: " + ACCOUNT_NUMBER;
+  tag.setAttribute("aria-label", "Copy account number");
+
+  tag.addEventListener("click", copyAccountNumber);
 
   section.appendChild(tag);
 
